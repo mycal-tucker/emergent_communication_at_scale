@@ -21,11 +21,11 @@ import chex
 import haiku as hk
 import jax
 from ml_collections import config_dict
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.losses import listeners as listener_losses
-from emergent_communication_at_scale.losses import speakers as speaker_losses
-from emergent_communication_at_scale.networks import listeners
-from emergent_communication_at_scale.networks import speakers
+import custom_types as types
+from losses import listeners as listener_losses
+from losses import speakers as speaker_losses
+from networks import listeners
+from networks import speakers
 
 
 class SpeakerListenerGame:

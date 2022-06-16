@@ -19,7 +19,7 @@ import chex
 import jax
 import jax.numpy as jnp
 import rlax
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 class SpeakerLoss(abc.ABC):

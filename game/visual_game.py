@@ -24,9 +24,9 @@ import chex
 import jax
 import tensorflow.compat.v2 as tf
 import tensorflow_datasets as tfds
-from emergent_communication_at_scale.game import dataset as visual_dataset
-from emergent_communication_at_scale.game.game_interface import batch_size_per_device
-from emergent_communication_at_scale.game.game_interface import Game
+from game import dataset as visual_dataset
+from game.game_interface import batch_size_per_device
+from game.game_interface import Game
 
 AUTOTUNE = tf.data.experimental.AUTOTUNE
 

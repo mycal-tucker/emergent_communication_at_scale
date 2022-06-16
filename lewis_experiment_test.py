@@ -17,9 +17,9 @@ from absl.testing import absltest
 import jax
 from jaxline import platform
 from jaxline import train
-from emergent_communication_at_scale import lewis_experiment
-from emergent_communication_at_scale.configs import lewis_config
-from emergent_communication_at_scale.utils import eval_utils
+import lewis_experiment
+from configs import lewis_config
+from utils import eval_utils
 
 
 class LewisTest(absltest.TestCase):

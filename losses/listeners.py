@@ -20,8 +20,8 @@ from typing import Any, Dict
 import chex
 import jax
 import jax.numpy as jnp
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.utils import utils as emcom_utils
+import custom_types as types
+from utils import utils as emcom_utils
 
 
 class ListenerLoss(abc.ABC):

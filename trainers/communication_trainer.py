@@ -21,9 +21,9 @@ from typing import Tuple
 import chex
 import jax
 from jaxline import utils
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.utils import population_storage as ps
-from emergent_communication_at_scale.utils import utils as emcom_utils
+import custom_types as types
+from utils import population_storage as ps
+from utils import utils as emcom_utils
 
 
 @jax.pmap

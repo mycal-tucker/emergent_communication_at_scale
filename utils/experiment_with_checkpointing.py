@@ -23,8 +23,8 @@ import jax.numpy as jnp
 from jaxline import experiment
 from jaxline import utils
 from ml_collections import config_dict
-from emergent_communication_at_scale.utils import checkpointer as ckpt_api
-from emergent_communication_at_scale.utils import population_storage as ps
+from utils import checkpointer as ckpt_api
+from utils import population_storage as ps
 
 
 class ExperimentWithCheckpointing(experiment.AbstractExperiment):

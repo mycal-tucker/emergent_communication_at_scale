@@ -16,7 +16,7 @@
 
 import chex
 import haiku as hk
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 def torso_factory(

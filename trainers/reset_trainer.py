@@ -20,8 +20,8 @@ import chex
 import jax
 
 from jaxline import utils
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.utils import population_storage as ps
+import custom_types as types
+from utils import population_storage as ps
 
 
 class ResetTrainer():

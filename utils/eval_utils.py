@@ -24,7 +24,7 @@ import jax
 
 from ml_collections import config_dict
 import numpy as np
-from emergent_communication_at_scale import lewis_experiment
+import lewis_experiment
 
 
 FLAGS = flags.FLAGS

@@ -27,16 +27,16 @@ from jaxline import utils
 from ml_collections import config_dict
 import numpy as np
 import optax
-from emergent_communication_at_scale import agent
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.game import game_factory
-from emergent_communication_at_scale.trainers import communication_trainer
-from emergent_communication_at_scale.trainers import imitation_trainer
-from emergent_communication_at_scale.trainers import reset_trainer
-from emergent_communication_at_scale.utils import experiment_with_checkpointing as jaxline_ckpt
-from emergent_communication_at_scale.utils import language_measures
-from emergent_communication_at_scale.utils import population_storage as ps
-from emergent_communication_at_scale.utils import utils as emcom_utils
+import agent
+import custom_types as types
+from game import game_factory
+from trainers import communication_trainer
+from trainers import imitation_trainer
+from trainers import reset_trainer
+from utils import experiment_with_checkpointing as jaxline_ckpt
+from utils import language_measures
+from utils import population_storage as ps
+from utils import utils as emcom_utils
 
 # This file should only include langame and jaxline dependencies!
 

@@ -19,7 +19,7 @@ from typing import Iterator, Union
 import jax
 import jax.numpy as jnp
 import numpy as np
-from emergent_communication_at_scale import types
+import custom_types as types
 
 NumpyValue = Union[np.ndarray, np.generic, bytes]
 GameIterator = Iterator[types.GamesInputs]

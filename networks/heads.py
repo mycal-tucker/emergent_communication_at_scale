@@ -19,7 +19,7 @@ import chex
 import haiku as hk
 import jax
 import jax.numpy as jnp
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 def head_factory(

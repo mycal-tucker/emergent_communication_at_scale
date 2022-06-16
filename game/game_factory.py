@@ -16,9 +16,9 @@
 
 
 from ml_collections import config_dict
-from emergent_communication_at_scale.game import visual_game
-from emergent_communication_at_scale.game.dummy_game import DummyGame
-from emergent_communication_at_scale.game.game_interface import Game
+from game import visual_game
+from game.dummy_game import DummyGame
+from game.game_interface import Game
 
 
 def get(

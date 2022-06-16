@@ -19,7 +19,7 @@ from typing import Dict, NamedTuple
 import numpy as np
 import tensorflow.compat.v2 as tf
 import tree
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 ####################

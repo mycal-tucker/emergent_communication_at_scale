@@ -19,10 +19,10 @@ import chex
 import haiku as hk
 import jax.numpy as jnp
 import rlax
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.networks import cores
-from emergent_communication_at_scale.networks import heads
-from emergent_communication_at_scale.networks import torsos
+import custom_types as types
+from networks import cores
+from networks import heads
+from networks import torsos
 
 
 class Speaker(hk.Module):

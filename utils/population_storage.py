@@ -22,7 +22,7 @@ import haiku as hk
 import jax
 from jaxline import utils
 import optax
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 class PopulationStorage:

@@ -16,7 +16,7 @@
 
 from jaxline import base_config
 from ml_collections import config_dict
-from emergent_communication_at_scale import types
+import custom_types as types
 
 TASK_OVERRIDE = {}
 
@@ -152,9 +152,10 @@ def get_config(sweep='debug'):
                           max_steps=get_value('training_steps')),
                       visual_game=dict(
                           dataset_name='byol_imagenet2012',
+                          # dataset_name='byol_celeb_a2',
                           # Important: Make sure to download the data
                           # and update here.
-                          dataset_path='emergent_communication_at_scale/emcom_datasets/',
+                          dataset_path='emcom_datasets/',
                           coeff_noise=0.0,
                           num_evaluation_epochs=5,
                           shuffle_evaluation=True,

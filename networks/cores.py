@@ -19,7 +19,7 @@ from typing import Optional, Sequence, Tuple
 import chex
 import haiku as hk
 import jax.numpy as jnp
-from emergent_communication_at_scale import types
+import custom_types as types
 
 
 def core_factory(

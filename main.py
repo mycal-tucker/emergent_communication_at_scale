@@ -19,9 +19,9 @@ from absl import app
 from absl import flags
 import jax
 from jaxline import platform
-from emergent_communication_at_scale import eol_experiment
-from emergent_communication_at_scale import lewis_experiment
-from emergent_communication_at_scale.utils import eval_utils
+import eol_experiment
+import lewis_experiment
+from utils import eval_utils
 
 
 FLAGS = flags.FLAGS

@@ -16,7 +16,7 @@
 
 from jaxline import base_config
 from ml_collections import config_dict
-from emergent_communication_at_scale import types
+import custom_types as types
 
 TASK_OVERRIDE = {}
 
@@ -110,7 +110,7 @@ def get_config(sweep='debug'):
                           dataset_name='byol_imagenet2012',
                           # Important: Make sure to download the data
                           # and update here.
-                          dataset_path='emergent_communication_at_scale/emcom_datasets/',
+                          dataset_path='emcom_datasets/',
                           coeff_noise=0.0,
                           shuffle_training=True,
                           is_one_hot_label=True,

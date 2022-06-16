@@ -24,7 +24,7 @@ import jax
 import jax.numpy as jnp
 from jaxline import utils
 from ml_collections import config_dict
-from emergent_communication_at_scale import types
+import custom_types as types
 
 CkptData = collections.namedtuple("CkptData",
                                   ["experiment_state", "config", "step", "rng"])

@@ -18,10 +18,10 @@ from absl.testing import absltest
 from jaxline import platform
 from jaxline import train
 from jaxline import utils
-from emergent_communication_at_scale import eol_experiment
-from emergent_communication_at_scale import lewis_experiment
-from emergent_communication_at_scale.configs import ease_of_learning_config
-from emergent_communication_at_scale.configs import lewis_config
+import eol_experiment
+import lewis_experiment
+from configs import ease_of_learning_config
+from configs import lewis_config
 
 
 class EaseOfLearningTest(absltest.TestCase):

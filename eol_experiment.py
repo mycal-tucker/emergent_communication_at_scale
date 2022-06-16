@@ -24,9 +24,9 @@ from jaxline import utils
 from ml_collections import config_dict
 import numpy as np
 import optax
-from emergent_communication_at_scale import lewis_experiment
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.utils import checkpointer as ckpt_lib
+import lewis_experiment
+import custom_types as types
+from utils import checkpointer as ckpt_lib
 
 
 class EaseOfLearningExperiment(lewis_experiment.LewisExperiment):

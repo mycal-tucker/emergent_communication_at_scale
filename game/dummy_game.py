@@ -15,9 +15,9 @@
 """Lewis Game."""
 
 import numpy as np
-from emergent_communication_at_scale import types
-from emergent_communication_at_scale.game.game_interface import dispatch_per_device
-from emergent_communication_at_scale.game.game_interface import Game
+import custom_types as types
+from game.game_interface import dispatch_per_device
+from game.game_interface import Game
 
 
 def iterator(num_games, max_steps, mode):
