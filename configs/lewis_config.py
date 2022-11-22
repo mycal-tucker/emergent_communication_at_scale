@@ -21,7 +21,7 @@ import custom_types as types
 TASK_OVERRIDE = {}
 
 
-def get_config(sweep='debug'):
+def get_config(sweep='imagenet'):
   """Return config object for training."""
 
   config = base_config.get_base_config()
@@ -58,7 +58,7 @@ def get_config(sweep='debug'):
                   kwargs=dict(adam=dict()),
               ),
               training=dict(
-                  batch_size=1024,
+                  batch_size=16,
                   length=get_value('length'),
                   target_update_ema=0.99,
                   steps=get_value('training_steps'),
@@ -122,7 +122,7 @@ def get_config(sweep='debug'):
               ),
               reset=dict(reset_step=None, reset_type=types.ResetMode.PAIR),
               evaluation=dict(
-                  batch_size=1024,
+                  batch_size=16,
                   subsampling_ratio=0.01,
                   max_n_agents=10,
                   topsim_meaning_similarity=types.MeaningSimilarity.INPUTS,
@@ -165,7 +165,7 @@ def get_config(sweep='debug'):
               checkpointing=dict(
                   use_checkpointing=True,
                   checkpoint_dir=get_value('checkpoint_dir'),
-                  save_checkpoint_interval=300,
+                  save_checkpoint_interval=300,  # Was 300
                   filename='agents.pkl'
               ),
           ),))

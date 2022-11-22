@@ -40,6 +40,7 @@ def main(argv):
     eval_utils.evaluate_final(config,
                               mode='eval_test_average',
                               rng=jax.random.PRNGKey(42))  # Deterministic eval
+    print("Done eval")
 
   elif config.experiment == 'ease_of_learning':
     platform.main(eol_experiment.EaseOfLearningExperiment, argv)
@@ -47,6 +48,7 @@ def main(argv):
   else:
     raise ValueError(f'{config.experiment} not recognized. '
                      'Only lewis and ease_of_learning are supported')
+  print("Finished with main fn")
 
 if __name__ == '__main__':
   app.run(main)

@@ -472,8 +472,13 @@ class LewisExperiment(jaxline_ckpt.ExperimentWithCheckpointing):
     # Prepares subsampling.
     subsampling_ratio = self._config.evaluation.subsampling_ratio
     assert 0.01 <= subsampling_ratio <= 1
-
+    i = 0
     for samples in self._game_builder.get_evaluation_games(mode):
+      # print("Number", i)
+      i += 1
+      if i > 1000:
+        print("Breaking eval early")
+        break
       for speaker_id in range(n_speakers):
         all_agents_outputs = []
         for listener_id in range(n_listeners):
@@ -496,6 +501,7 @@ class LewisExperiment(jaxline_ckpt.ExperimentWithCheckpointing):
             predictions=all_agents_outputs,
             games=games,
         )
+        # print("Eval scalars", ensemble_scalars)
         # Saves ensemble stats and stats for the last listener (one pair).
         scalars = {**ensemble_scalars, **agent_outputs.stats}
 
